@@ -3,7 +3,7 @@
 
 <head>
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Sanchez" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 
@@ -47,6 +47,82 @@
         .container-mid {
             padding: 20px 0 50px 0;
         }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        .card-title {
+            font-family: 'Sanchez'
+        }
+        
+        .item-p {
+            position: relative;
+        }
+        
+        .item-p .hover-content {
+            position: absolute;
+            background-color: rgba(55, 71, 79, 0.95);
+            color: #23A2DC;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 23px;
+            display: none;
+        }
+        
+        .item-p .hover-content p {
+            width: 100%;
+        }
+        
+        .item-p:hover .hover-content {
+            display: flex;
+            cursor: pointer;
+        }
+        
+        .modal-fs {
+            top: 0 !important;
+            bottom: 0;
+            width: 100%;
+            max-height: 100%;
+            border-radius: 0;
+	background: #f0f0f0;
+        }
+        
+        .modal-fs .modal-content {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+        }
+         .modal-fs .modal-content hr {
+            width: 60%;
+            border-top-width: 5px;
+            text-align: center;
+             margin: 50px auto;
+        }
+        .modal-fs .modal-content hr:after {
+            content: '§';
+            position: relative;
+            top: -14px;
+            padding: 0 10px;
+            background: #f0f0f0;
+            color: #8c8b8b;
+            font-size: 18px;
+        }
+        
+        .modal-fs .modal-content .modal-close {
+            font-size: 50px;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #8c8b8b;
+        }
+        .modal-fs .modal-content .modal-close:hover{
+            color: #000000;
+        }
     </style>
 
     <script src="https://use.fontawesome.com/6e14a0bb65.js"></script>
@@ -59,13 +135,13 @@
     <div id="index-banner" class="parallax-container valign-wrapper" style="height: 100%; position: relative;">
         <div class="section no-pad-bot">
             <div class="row center">
-                <img src="logo_b.png" alt="Logo Diseños en Madera" class="responsive-img">
+                <img src="logo_b.png" alt="Logo Erick Madrigal" class="responsive-img">
             </div>
 
         </div>
         <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
         <div style="position:absolute; bottom: 0; left: 5%; right: 5%; background-color: rgba(0,0,0,0.7); z-index: 1; padding:0px 10px; color: white; display: flex;align-items: center;justify-content: space-between">
-            <p style="display: inline;float:left; vertical-align: middle;">Bienvenido a mi sitio web! <img src="bitmoji.png" style="width: 60px; display: inline; vertical-align: middle;" alt=""></p>
+            <p style="display: inline;float:left; vertical-align: middle;">Bienvenido a mi sitio web! <img src="img/bitmoji.png" style="width: 60px; display: inline; vertical-align: middle;" alt=""></p>
             <p class="btn blue darken-3 pulse" style="text-align: right;  margin: 0; float: right; vertical-align: middle;" onclick="$('html, body').animate({scrollTop: 10},100);"><i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
         </div>
     </div>
@@ -75,7 +151,7 @@
             <a id="logo-container" href="#" class="brand-logo"><img src="logo_s_w.png" alt=""></a>
             <ul class="right hide-on-med-and-down">
                 <li class="active"><a href="#">Certificaciones</a></li>
-                <li><a href="#">Portafolio</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
 
@@ -101,7 +177,7 @@
 
         </div>
     </div>
-    
+
     <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
@@ -113,7 +189,7 @@
         <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 3"></div>
     </div>
 
-    <div class="container-mid">
+    <div class="container-mid" style="background-color: #f0f0f0;">
         <div class="section">
             <div class="row">
                 <div class="col s12 l6">
@@ -161,10 +237,10 @@
         </div>
     </div>
 
-    <div class="parallax-container valign-wrapper">
+    <div id="portfolio" class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
-                <div class="row center">
+                <div class="row center scrollspy">
                     <h2 class="header col s12" style="color: #6DC1E5">Trabajos Realizados</h2>
                 </div>
             </div>
@@ -172,29 +248,88 @@
         <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
     </div>
 
-    <div class="container-mid">
+    <div class="container-mid" style="background-color: #f0f0f0;">
         <div class="section">
             <div class="row">
                 <div class="col s12 l3">
-                    <div class="">
-                        <img class="responsive-img" src="http://erickmadrigal.me/img/portfolio/MSCP.png">                        
+                    <div class="item-p valign-wrapper" onclick="$('#modalCNC').modal('open')">
+                        <div class="hover-content  valign-wrapper">
+                            <p>Ver Más<br /><i class="material-icons">zoom_in</i></p>
+                        </div>
+                        <img class="responsive-img" src="img/portfolio/cnc.png">
                     </div>
-                </div>                
-                <div class="col s12 l3">
-                    <div class="">
-                        <img class="responsive-img" src="http://erickmadrigal.me/img/portfolio/MSCP.png">                        
+                </div>
+                <!-- Modal Structure -->
+                <div id="modalCNC" class="modal modal-fs">
+                    <div class="modal-content">
+                        <h4>CONSEJO NACIONAL DE CONCESIONES - SITIO WEB</h4>
+                        <hr />
+                        <img src="img/portfolio/cnc-B.png" alt="" class="responsive-img">
+                        <p>Elaboración del Portal Web y del Portal Interno. Se cargó la estructura, el contenido, se personalizó el estilo, se crearon modulos específicos para los servicios ofrecidos y se implemento la autenticación mediante Google para el acceso al Portal Interno</p>
+                        <a href="#!" class="waves-effect waves-green btn">Visitar</a>
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green"><i class="fa fa-window-close-o" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Listo</a>
                     </div>
                 </div>
                 <div class="col s12 l3">
-                    <div class="">
-                        <img class="responsive-img" src="http://erickmadrigal.me/img/portfolio/MSCP.png">                        
-                    </div>
-                </div>                
-                <div class="col s12 l3">
-                    <div class="">
-                        <img class="responsive-img" src="http://erickmadrigal.me/img/portfolio/MSCP.png">                        
+                    <div class="item-p valign-wrapper" onclick="$('#modalBDSA').modal('open')">
+                        <div class="hover-content  valign-wrapper">
+                            <p>Ver Más<br /><i class="material-icons">zoom_in</i></p>
+                        </div>
+                        <img class="responsive-img" src="img/portfolio/BDGeoSantaAna.png">
                     </div>
                 </div>
+                <!-- Modal Structure -->
+                <div id="modalBDSA" class="modal modal-fs">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+
+                <div class="col s12 l3">
+                    <div class="item-p valign-wrapper" onclick="$('#modalCifemat').modal('open')">
+                        <div class="hover-content  valign-wrapper">
+                            <p>Ver Más<br /><i class="material-icons">zoom_in</i></p>
+                        </div>
+                        <img class="responsive-img" src="img/portfolio/cifemat.png">
+                    </div>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modalCifemat" class="modal modal-fs">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+
+                <div class="col s12 l3">
+                    <div class="item-p valign-wrapper" onclick="$('#modalCoteK').modal('open')">
+                        <div class="hover-content  valign-wrapper">
+                            <p>Ver Más<br /><i class="material-icons">zoom_in</i></p>
+                        </div>
+                        <img class="responsive-img" src="img/portfolio/cote-k.png">
+                    </div>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modalCoteK" class="modal modal-fs">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div> 
+
             </div>
         </div>
     </div>
@@ -254,6 +389,7 @@
                 return document.body.removeChild($('#index-banner')[0]);
             }
         );
+
         function goToContent() {
             $('html, body').animate({
                     scrollTop: $('#index-banner').height()
@@ -278,6 +414,7 @@
                 callback: goToContent
             }];
             Materialize.scrollFire(options);
+
         });
     </script>
 </body>
