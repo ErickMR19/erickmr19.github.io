@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .parallax-container {
+            min-height: 350px;
+            line-height: 0;
+            height: auto;
+            background-color: rgba(0, 0, 0, .5);
+        }
+        
+        #index-banner {
+            background-color: rgba(0, 0, 0, .5);
+        }
+        
+        .parallax-container .section {
+            width: 100%;
+        }
+        
+        .buttom-go-content {
+            box-sizing: border-box;
+            border: 1px solid white;
+        }
+        
+        .buttom-go-content:hover {
+            box-sizing: border-box;
+            background-color: white;
+            color: black;
+        }
+        
+        .card-reveal {
+            overflow: hidden;
+        }
+        
+        .card-reveal .card-title {
+            font-size: 18px;
+        }
+        
+        .container-mid {
+            padding: 20px 0 50px 0;
+        }
+    </style>
+
+    <script src="https://use.fontawesome.com/6e14a0bb65.js"></script>
+</head>
+
+<body style="height: 100%">
+
+
+
+    <div id="index-banner" class="parallax-container valign-wrapper" style="height: 100%; position: relative;">
+        <div class="section no-pad-bot">
+            <div class="row center">
+                <img src="logo_b.png" alt="Logo Diseños en Madera" class="responsive-img">
+            </div>
+
+        </div>
+        <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+        <div style="position:absolute; bottom: 0; left: 5%; right: 5%; background-color: rgba(0,0,0,0.7); z-index: 1; padding:0px 10px; color: white; display: flex;align-items: center;justify-content: space-between">
+            <p style="display: inline;float:left; vertical-align: middle;">Bienvenido a mi sitio web! <img src="bitmoji.png" style="width: 60px; display: inline; vertical-align: middle;" alt=""></p>
+            <p class="btn blue darken-3 pulse" style="text-align: right;  margin: 0; float: right; vertical-align: middle;" onclick="$('html, body').animate({scrollTop: 10},100);"><i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
+        </div>
+    </div>
+
+    <nav class="blue-grey darken-3" id="main-nav" role="navigation" style="z-index: 1; top: 0;">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><img src="logo_s_w.png" alt=""></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="#">Certificaciones</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div id="presentation" class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col l6 center">
+                    <h3><i class="mdi-content-send brown-text"></i>Erick Madrigal Ríos</h3>
+                    <p class="left-align light">Soy un informático especializado en el desarrollo de sitios y aplicaciones web.</p>
+                    <p class="left-align light">Graduado de la Universidad de Costa Rica en abril del 2017.</p>
+                    <p class="left-align light">Me gusta trabajar con software libre y estar al tanto de nuevas tecnologías.</p>
+                    <p class="left-align light">El medio ambiente es un tema que me preocupa, y trato en lo posible de ayudar con su consevación. Si forma parte de un proyecto, en cual cree que pueda servirle de apoyo no dude en contactarme. </p>
+                    <p class="left-align light">Trabajo como desarrollador freelancer, cualquier servicio que pueda ofrecerle, podemos hablarlo.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h2 class="header col s12" style="color: #6DC1E5">Certificaciones Obtenidas</h2>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+
+    <div class="container-mid">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 l6">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img class="activator" src="http://erickmadrigal.me/img/portfolio/MSCP.png">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">MCP<i class="material-icons right">more_vert</i></span>
+                                <p>Microsoft Certified Professional</p>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">MS: Programming in HTML5 with JS & CSS3<i class="material-icons right">close</i></span>
+                            <p>Obtenida en Diciembre del 2016</p>
+                            <div class="card-action">
+                                <a href="http://www.mycertprofile.com/Profile/7582730905/12/1519/" target="_blank">Ver certificado</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l6">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img class="activator" src="http://erickmadrigal.me/img/portfolio/MS-HTML5JSCSS.png">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">MS<i class="material-icons right">more_vert</i></span>
+                                <p>Microsoft Specialist: Programming in HTML5 with JavaScript & CSS3</p>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">MS: Programming in HTML5 with JS & CSS3<i class="material-icons right">close</i></span>
+                            <p>Obtenida en Diciembre del 2016</p>
+                            <div class="card-action">
+                                <a href="http://www.mycertprofile.com/Profile/7582730905/90/1485/" target="_blank">Ver certificado</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h2 class="header col s12" style="color: #6DC1E5">Trabajos Realizados</h2>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+
+    <div class="container-mid">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 l3">
+                    <div class="">
+                        <img class="responsive-img" src="http://erickmadrigal.me/img/portfolio/MSCP.png">                        
+                    </div>
+                </div>                
+                <div class="col s12 l3">
+                    <div class="">
+                        <img class="responsive-img" src="http://erickmadrigal.me/img/portfolio/MSCP.png">                        
+                    </div>
+                </div>
+                <div class="col s12 l3">
+                    <div class="">
+                        <img class="responsive-img" src="http://erickmadrigal.me/img/portfolio/MSCP.png">                        
+                    </div>
+                </div>                
+                <div class="col s12 l3">
+                    <div class="">
+                        <img class="responsive-img" src="http://erickmadrigal.me/img/portfolio/MSCP.png">                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer  blue darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+                </div>
+                <div class="col l6 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Desarrollado por <a class="brown-text text-lighten-3" href="https://erickmadrigal.me">Erick Madrigal</a>, cabalmente :)
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="fullPage/vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="fullPage/jquery.fullPage.min.js"></script>
+    <script>
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        }
+        var invoqueOnce = function(fTI) {
+            var invoqued = true;
+            var functionToInvoque = fTI || null;
+            return {
+                invoque: function() {
+                    if (invoqued && functionToInvoque) {
+                        invoqued = false;
+                        return functionToInvoque();
+                    }
+                    return null;
+                }
+            };
+        }
+        let removeChildOnce = invoqueOnce(
+            function() {
+                return document.body.removeChild($('#index-banner')[0]);
+            }
+        );
+        function goToContent() {
+            $('html, body').animate({
+                    scrollTop: $('#index-banner').height()
+                },
+                1000,
+                "swing",
+                function() {
+                    $('#main-nav').css("position", "fixed");
+                    $('#presentation').css("margin-top", 64);
+                    removeChildOnce.invoque();
+                    window.scrollTo(0, 0);
+                }
+            );
+        }
+        $(document).ready(function() {
+            $('.parallax').parallax();
+            $('.button-collapse').sideNav();
+            let offset = $('#index-banner').height();
+            var options = [{
+                selector: '#index-banner',
+                offset: offset,
+                callback: goToContent
+            }];
+            Materialize.scrollFire(options);
+        });
+    </script>
+</body>
+
+</html>
