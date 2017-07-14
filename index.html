@@ -6,208 +6,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Sanchez" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-
-    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/style.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        .parallax-container {
-            min-height: 350px;
-            line-height: 0;
-            height: auto;
-            background-color: rgba(0, 0, 0, .5);
-        }
-        
-        #index-banner {
-            background-color: rgba(110, 110, 90, .55);
-        }
-        
-        #index-banner img {
-            max-width: 90% !important;
-        }
-        
-        .parallax-container .section {
-            width: 100%;
-        }
-        
-        .buttom-go-content {
-            box-sizing: border-box;
-            border: 1px solid white;
-        }
-        
-        .buttom-go-content:hover {
-            box-sizing: border-box;
-            background-color: white;
-            color: black;
-        }
-        
-        .card-reveal {
-            overflow: hidden;
-        }
-        
-        .card-reveal .card-title {
-            font-size: 18px;
-        }
-        
-        .container-mid {
-            padding: 20px 0 50px 0;
-        }
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        .card-title {
-            font-family: 'Sanchez'
-        }
-        
-        .item-p {
-            position: relative;
-        }
-        
-        .item-p .hover-content {
-            position: absolute;
-            background-color: rgba(55, 71, 79, 0.95);
-            color: #23A2DC;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            font-size: 23px;
-            display: none;
-        }
-        
-        .item-p .hover-content p {
-            width: 100%;
-        }
-        
-        .item-p:hover .hover-content {
-            display: flex;
-            cursor: pointer;
-        }
-    </style>
-    <style>
-        /* label color */
-        
-        .input-field input,
-        .input-field textarea {
-            color: #fff;
-        }
-        
-        .input-field label {
-            font-weight: bold;
-        }
-        
-        .input-field input.valid+label {
-            color: #0f0;
-        }
-        /* label focus color */
-        
-        input[type="text"]:focus:not(.browser-default):not([readonly])+label,
-        input[type="email"]:focus:not(.browser-default):not([readonly])+label,
-        textarea:focus:not(.browser-default):not([readonly])+label {
-            color: #D28D19;
-        }
-        /* label underline focus color */
-        
-        input[type="text"]:focus:not(.browser-default):not([readonly]),
-        input[type="email"]:focus:not(.browser-default):not([readonly]),
-        textarea:focus:not(.browser-default):not([readonly]) {
-            border-bottom: 1px solid #D28D19;
-            box-shadow: 0 1px 0 0 #D28D19;
-        }
-        /* valid color */
-        
-        .input-field input[type=text].valid,
-        .input-field input[type=email].valid {
-            border-bottom: 1px solid #0f0;
-            box-shadow: 0 1px 0 0 #0f0;
-        }
-        /* invalid color */
-        
-        .input-field input[type=text].invalid,
-        .input-field input[type=email].invalid {
-            border-bottom: 1px solid #f00;
-            box-shadow: 0 1px 0 0 #f00;
-        }
-        /* icon prefix focus color */
-        
-        .input-field .prefix.active {
-            color: #00f;
-        }
-        
-        .input-field .prefix {
-            color: #f0f0f0;
-        }
-        
-        .input-field .prefix.active {
-            color: #D28D19;
-        }
-        
-        #main-nav a.brand-logo.active {
-            background-color: transparent;
-        }
-        
-        .toast-error {
-            background-color: #d50000;
-        }
-        
-        .toast-error a {
-            color: #64ffda;
-            font-weight: 500;
-        }
-        
-        .modal-content {
-            min-height: calc( 100vh - 60px);
-        }
-        
-        .list-inline {
-            padding-left: 0;
-            list-style: none;
-            margin-left: -5px;
-        }
-        
-        .list-inline {
-            padding-left: 0;
-            list-style: none;
-            margin-left: -5px;
-            display: flex;
-            max-width: 350px;
-        }
-        .list-inline > li {
-            flex: 1;
-        }
-
-        .btn-social {
-            display: inline-block;
-            height: 50px;
-            width: 50px;
-            border: 2px solid white;
-            border-radius: 100%;
-            text-align: center;
-            font-size: 20px;
-            line-height: 45px;
-        }
-        .btn-outline {
-            color: white;
-            font-size: 20px;
-            border: solid 2px white;
-            margin-top: 15px;
-        }
-
-        .btn-outline:hover {
-            color: blue;
-            background-color: #ffffff;
-            transition: all 0.5s ease-in-out;
-        }
-        
-        .page-footer .footer-copyright {
-            background-color: rgba(30,30,50,0.35);
-        }
-    </style>
-
     <script src="https://use.fontawesome.com/6e14a0bb65.js"></script>
 </head>
 
@@ -255,9 +56,9 @@
                     <p class="left-align light">Trabajo como desarrollador freelancer, cualquier servicio que pueda ofrecerle, podemos hablarlo.</p>
                     <a href="#contact" class="btn blue darken-3">Ir a contacto</a>
                 </div>
-            <div class="col s12 m6 center">
-                <img class="responsive-img photo" src="img/erick.jpg" alt="Fotografía de Erick Madrigal" />
-            </div>
+                <div class="col s12 m6 center">
+                    <img class="responsive-img photo" src="img/erick.jpg" alt="Fotografía de Erick Madrigal" />
+                </div>
             </div>
 
         </div>
@@ -498,27 +299,27 @@
                     <h5 class="white-text">Redes Sociales</h5>
                     <ul class="list-inline">
                         <li>
-                            <a href="https://www.facebook.com/erickmadrigalrios" class="btn-social btn-outline">
+                            <a href="https://www.facebook.com/erickmadrigalrios" class="btn-social btn-outline" target="_blank">
                                 <i class="fa fa-fw fa-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/u/0/+ErickMadrigalR%C3%ADos" class="btn-social btn-outline">
+                            <a href="https://plus.google.com/u/0/+ErickMadrigalR%C3%ADos" class="btn-social btn-outline" target="_blank">
                                 <i class="fa fa-fw fa-google-plus"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/erickmr19" class="btn-social btn-outline">
+                            <a href="https://twitter.com/erickmr19" class="btn-social btn-outline" target="_blank">
                                 <i class="fa fa-fw fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://cr.linkedin.com/pub/erick-madrigal-ríos/44/a6/123" class="btn-social btn-outline">
+                            <a href="https://cr.linkedin.com/pub/erick-madrigal-ríos/44/a6/123" class="btn-social btn-outline" target="_blank">
                                 <i class="fa fa-fw fa-linkedin"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/erickmr19" class="btn-social btn-outline">
+                            <a href="https://github.com/erickmr19" class="btn-social btn-outline" target="_blank">
                                 <i class="fa fa-fw fa-github"></i>
                             </a>
                         </li>
@@ -537,106 +338,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-    <script>
-        window.onbeforeunload = function() {
-            window.scrollTo(0, 0);
-        }
-        var invoqueOnce = function(fTI) {
-            var invoqued = true;
-            var functionToInvoque = fTI || null;
-            return {
-                invoque: function() {
-                    if (invoqued && functionToInvoque) {
-                        invoqued = false;
-                        return functionToInvoque();
-                    }
-                    return null;
-                }
-            };
-        }
-        let removeChildOnce = invoqueOnce(
-            function() {
-                return document.body.removeChild($('#index-banner')[0]);
-            }
-        );
-
-        function goToContent() {
-            $('html, body').animate({
-                    scrollTop: $('#index-banner').height()
-                },
-                1000,
-                "swing",
-                function() {
-                    $('#main-nav').css("position", "fixed");
-                    $('#presentation').css("margin-top", 64);
-                    removeChildOnce.invoque();
-                    window.scrollTo(0, 0);
-                }
-            );
-        }
-        $(document).ready(function() {
-            changeClassCards();
-            $('.parallax').parallax();
-            $('.button-collapse').sideNav({closeOnClick: true});
-            let offset = $('#index-banner').height();
-            var options = [{
-                selector: '#index-banner',
-                offset: offset,
-                callback: goToContent
-            }];
-            Materialize.scrollFire(options);
-            $('.scrollspy').scrollSpy({
-                scrollOffset: 40,
-                getActiveElement: function(id) {
-                    return 'a[href="#' + id + '"]';
-                }
-            });
-            $(window).resize(changeClassCards);
-        });
-    </script>
-    <script>
-        function sendEmail(form) {
-            // get values from FORM
-            var name = form.elements.name.value;
-            var email = form.elements.email.value;
-            var phone = form.elements.phone.value;
-            var message = form.elements.message.value;
-            console.log({
-                name: name,
-                phone: phone,
-                email: email,
-                message: message
-            });
-            $.ajax({
-                url: "././mail/contact_me.php",
-                type: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
-                cache: false,
-                success: function() {
-                    Materialize.toast('Muchas gracias, su mensaje fue enviado exitosamente', 4000);
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
-                },
-                error: function() {
-                    // Fail message
-                    Materialize.toast('<p>Ocurrió un error. Por favor inténtelo luego o escriba un correo a <br /><a href="mailto:erickmadrigalrios@gmail.com">erickmadrigalrios@gmail.com</a></p>', 4000, 'toast-error');
-                },
-            });
-            return false;
-        }
-        
-        function changeClassCards() {
-            if (window.innerWidth > 600) {
-                $('.card').addClass('horizontal');
-            } else {
-                $('.card').removeClass('horizontal');
-            }
-        }
-    </script>
+    <script src="js/init.js"></script>
 </body>
 </html>
