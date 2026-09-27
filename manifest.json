@@ -1,0 +1,14 @@
+{
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "type": "image/png",
+      "sizes": "55x50"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#37474f",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#37474f"
+}
